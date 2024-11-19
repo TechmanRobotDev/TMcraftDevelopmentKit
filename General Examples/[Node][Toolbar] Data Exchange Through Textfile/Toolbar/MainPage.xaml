@@ -1,0 +1,45 @@
+<UserControl x:Class="DataExchangeDemo_toolbar.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DataExchangeDemo_toolbar"
+             mc:Ignorable="d" 
+             d:DesignHeight="440" d:DesignWidth="440" Loaded="UserControl_Loaded">
+    <Grid Background="#FFE3E3E3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="0.7*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="0.7*"/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="Grid_Title" Grid.Row="0" Background="#FFE8DB5F">
+            <Label Content="Data Exchange Demo" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="36"/>
+        </Grid>
+
+        <Grid x:Name="Grid_A" Grid.Row="1">
+            <Label Content="A" FontSize="28" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Center"></Label>
+            <TextBox x:Name="TextBox_A" FontSize="28" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,30,0" Width="280" Height="60"></TextBox>
+        </Grid>
+
+        <Grid x:Name="Grid_B" Grid.Row="2">
+            <Label Content="B" FontSize="28" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Center"></Label>
+            <TextBox x:Name="TextBox_B" FontSize="28" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,30,0" Width="280" Height="60"></TextBox>
+        </Grid>
+
+        <Grid x:Name="Grid_C" Grid.Row="3">
+            <Label Content="C" FontSize="28" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Center"></Label>
+            <TextBox x:Name="TextBox_C" FontSize="28" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,30,0" Width="280" Height="60"></TextBox>
+        </Grid>
+
+        <Grid x:Name="Grid_Set" Grid.Row="4" Background="White">
+            <Label x:Name="Label_Msg" FontSize="16" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"></Label>
+            <Button x:Name="Btn_Save" Content="Save" FontSize="28" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,30,0" Width="80" Height="42" Click="Btn_Save_Click"  ></Button>
+        </Grid>
+
+        <Rectangle Grid.RowSpan="5" Stroke="Black"/>
+
+    </Grid>
+</UserControl>

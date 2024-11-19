@@ -1,0 +1,16 @@
+﻿<Window x:Class="ShowErrorEvent.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShowErrorEvent"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="768" Width="1366" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid Background="#FFE0E0E0">
+        <Label Content="Error Events" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="123" Width="790" FontSize="72"/>
+        <Button x:Name="Btn_Back" Content="Back To TMflow" HorizontalAlignment="Left" Margin="1076,10,0,0" VerticalAlignment="Top" Height="53" Width="259" Background="#FF7678C6" FontSize="24" Foreground="#FFFAF9F9" Click="Btn_Back_Click"/>
+        <TextBox x:Name="TextBox_Content" HorizontalAlignment="Left" Margin="28,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1307" Height="577" FontSize="36"/>
+        <Button x:Name="Btn_Clear" Content="Clear" HorizontalAlignment="Left" Margin="1076,73,0,0" VerticalAlignment="Top" Height="53" Width="259" Background="#FFDCE8D8" FontSize="24" Foreground="#FF287E08" Click="Btn_Clear_Click"/>
+        <Ellipse x:Name="Elp_errorStatus" HorizontalAlignment="Left" Height="44" Margin="420,50,0,0" Stroke="DimGray"  VerticalAlignment="Top" Width="44" Fill="GreenYellow"/>
+    </Grid>
+</Window>

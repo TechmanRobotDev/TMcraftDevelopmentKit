@@ -1,0 +1,77 @@
+1.20.1100
+- support: TMcraft Node, TMcraft Shell, TMcraft Toolbar, TMcraft Setup
+- Deprecated:
+	- TMcraftNodeAPI.RobotStatusProvider.GetFreeBot
+	- TMcraftNodeAPI.RobotStatusProvider.SetFreeBot
+	- TMcraftNodeAPI.RobotStatusProvider.EndButtonClickEvent
+	- TMcraftShellAPI.RobotStatusProvider.GetFreeBot
+	- TMcraftShellAPI.RobotStatusProvider.SetFreeBot
+	- TMcraftShellAPI.RobotStatusProvider.EndButtonClickEvent
+	- TMcraftToolbarAPI.RobotStatusProvider.GetFreeBot
+	- TMcraftToolbarAPI.RobotStatusProvider.SetFreeBot
+	- TMcraftToolbarAPI.RobotStatusProvider.EndButtonClickEvent
+	- TMcraftSetupAPI.RobotStatusProvider.GetFreeBot
+	- TMcraftToolbarAPI.RobotStatusProvider.SetFreeBot
+	- TMcraftToolbarAPI.RobotStatusProvider.EndButtonClickEvent
+
+- Add:
+	- TMcraftNodeType.dll
+	- class TMcraftNodeAPI.FreeBotProvider
+	- class TMcraftNodeAPI.EndButtonEventProvider
+	- class TMcraftShellAPI.FreeBotProvider
+	- class TMcraftShellAPI.EndButtonEventProvider
+	- class TMcraftToolbarAPI.FreeBotProvider
+	- class TMcraftToolbarAPI.EndButtonEventProvider
+	- class TMcraftSetupAPI.FreeBotProvider
+	- class TMcraftSetupAPI.EndButtonEventProvider
+
+- For more detal about API functions, please check the manual:
+	- TMcraft Node API Function Manual_1.20.1100
+	- TMcraft Shell API Function Manual_1.20.1100
+	- TMcraft Toolbar API Function Manual_1.20.1100
+	- TMcraft Setup API Function Manual_1.20.1100
+
+=================================================================
+1.18.1400
+- support: TMcraft Node, TMcraft Shell, TMcraft Toolbar, TMcraft Setup
+- Add:
+	- class TMcraftSetupAPI
+	- class TMcraftNodeAPI.TextfileProvider
+	- class TMcraftShellAPI.TextfileProvider
+	- class TMcraftToolbarAPI.TextfileProvider
+	- function TMcraftShellAPI.ProjectRunProvider.GetProjectList
+	- function TMcraftShellAPI.RobotStatusProvider.GetRobotName
+	- function TMcraftNodeAPI.RobotStatusProvider.GetRobotModelType
+	- function TMcraftNodeAPI.RobotStatusProvider.GetFlowVersion
+
+- For more detal about API functions, please check the manual:
+	- TMcraft Node API Function Manual_1.18.1400
+	- TMcraft Shell API Function Manual_1.18.1400
+	- TMcraft Toolbar API Function Manual_1.18.1400
+	- TMcraft Setup API Function Manual_1.18.1400
+
+=================================================================
+1.16.1400
+- support: TMcraft Node, TMcraft Shell, TMcraft Toolbar
+- Add: 
+	- class TMcraftShellAPI
+	- class TMcraftToolbarAPI
+	- interface ITMcraftToolbarEntry
+	- class ErrorStatus
+	- member: FreeBotInfo.MoveMode
+	- class MoveMode
+	- class LogExportSetting
+	- member: RobotEventType.EndButtonFreeBotChanged
+
+- For more detal about API functions, please check the manual:
+	- TMcraft Node API Function Manual_1.16.1400
+	- TMcraft Shell API Function Manual_1.16.1400
+	- TMcraft Toolbar API Function Manual_1.16.1400
+
+=================================================================
+1.14.1200
+- 1st release
+- support: TMcraft Node
+
+- For more detal about API functions, please check the manual: 
+	- TMcraft Node API Function Manual

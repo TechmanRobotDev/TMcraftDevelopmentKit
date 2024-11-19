@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TMcraftNodeType</name>
+    </assembly>
+    <members>
+        <member name="T:TMcraftNodeType.BinaryNodeTemplate">
+            <summary>
+            Member of the interface, which represents the node template. Note that this member is significant if and only if the node is binary outputs type.
+            </summary>
+        </member>
+        <member name="F:TMcraftNodeType.BinaryNodeTemplate.Pass_Fail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TMcraftNodeType.BinaryNodeTemplate.OK_NG">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TMcraftNodeType.BinaryNodeTemplate.Yes_No">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:TMcraftNodeType.NodeOutputTypeTemplate">
+            <summary>
+            Member of the interface, which represents the output type.
+            </summary>
+        </member>
+        <member name="F:TMcraftNodeType.NodeOutputTypeTemplate.Single">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TMcraftNodeType.NodeOutputTypeTemplate.Binary">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TMcraftNodeType.NodeOutputTypeTemplate.Multi">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:TMcraftNodeType.ITMcraftNodeOutputTypeEntry">
+            <summary>
+            The interface that defines the output type.
+            </summary>
+        </member>
+        <member name="P:TMcraftNodeType.ITMcraftNodeOutputTypeEntry.DefineNodeOutputType">
+            <summary>
+            Member of the interface, which represents the output type.
+            </summary>
+        </member>
+        <member name="P:TMcraftNodeType.ITMcraftNodeOutputTypeEntry.DefineBinaryNodeTemplate">
+            <summary>
+            Member of the interface, which represents the node template. Note that this member is significant if and only if the node is binary outputs type.
+            </summary>
+        </member>
+        <member name="P:TMcraftNodeType.ITMcraftNodeOutputTypeEntry.DefineCaseNodes">
+            <summary>
+            Member of the interface, which represents the name of case node. Note that this member is significant if and only if the node is multiple outputs type.
+            </summary>
+        </member>
+        <member name="M:TMcraftNodeType.ITMcraftNodeOutputTypeEntry.InitializeNodeOutputType">
+            <summary>
+            Member function of the interface where the program should assign the interface members.
+            </summary>
+        </member>
+    </members>
+</doc>

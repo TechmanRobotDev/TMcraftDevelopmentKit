@@ -1,0 +1,19 @@
+﻿<Window x:Class="JogbyShell.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JogbyShell"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="768" Width="1366" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid Background="#FFD7DEE6">
+        <Label Content="Jog the robot to normal pose" HorizontalAlignment="Left" Margin="54,14,0,0" VerticalAlignment="Top" Height="123" Width="957" FontSize="72"/>
+        <Button x:Name="Btn_Jog" Content="Start Jogging" HorizontalAlignment="Left" Margin="1078,663,0,0" VerticalAlignment="Top" Height="52" Width="259" Background="LightSeaGreen" FontSize="24" Foreground="White" Click="Btn_Jog_Click" />
+        <Button x:Name="Btn_Back" Content="Back To TMflow" HorizontalAlignment="Left" Margin="1078,20,0,0" VerticalAlignment="Top" Height="52" Width="259" Background="#FF21336C" FontSize="24" Foreground="#FFFAF9F9" Click="Btn_Back_Click"/>
+        <Button x:Name="Btn_Login" Content="Login" HorizontalAlignment="Left" Margin="1078,97,0,0" VerticalAlignment="Top" Height="52" Width="259" Background="#FF30A9CB" FontSize="24" Foreground="#FFFAF9F9" Click="Btn_Login_Click" />
+        <Rectangle HorizontalAlignment="Left" Height="582" Margin="54,133,0,0" Stroke="Black" VerticalAlignment="Top" Width="994" OpacityMask="White" Fill="White"/>
+        <Image Source="/img_posture_normal.png" HorizontalAlignment="Left" Height="493" Margin="84,178,0,0" VerticalAlignment="Top" Width="556"/>
+        <TextBox HorizontalAlignment="Left" Margin="628,0,0,0" TextWrapping="Wrap" Text="Please safety assess or keep distance before jogging." VerticalAlignment="Center" Width="365" FontSize="26" Background="#FFF4C73A" Height="83"/>
+
+    </Grid>
+</Window>

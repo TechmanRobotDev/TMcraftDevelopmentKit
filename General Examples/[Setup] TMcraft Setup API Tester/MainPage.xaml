@@ -1,0 +1,87 @@
+<UserControl x:Class="TMcraftSetupTestDll.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TMcraftSetupTestDll"
+             mc:Ignorable="d" 
+             d:DesignHeight="558" d:DesignWidth="993" Loaded="UserControl_Loaded">
+    <Border Width="993" Height="558" BorderThickness="1" BorderBrush="Black">
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Background="#FAFAFA">
+                <Label Name="CNTitle" Content="Customized Setup Test Tool" Height="30" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="5" VerticalAlignment="Center" />
+                <Button Name="btn_Close"  Content="X" FontSize="20" Width="40" Click="btn_Close_Click" HorizontalAlignment="Right" Background="#FAFAFA" Visibility="Collapsed"/>
+            </Grid>
+            <StackPanel  Background="White" Grid.Row="1">
+                <Rectangle Fill="DarkBlue" Height="3"/>
+                <DockPanel LastChildFill="True">
+                    <Border BorderBrush="Black" BorderThickness="1" Margin="1" DockPanel.Dock="Right" Height="500">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <DockPanel>
+                                <Label Content="Input Parameter" FontSize="16" DockPanel.Dock="Top"/>
+                                <TextBox Name="Input1" Text="" FontSize="14" Width="300" Height="30" Margin="5,0,0,0" HorizontalAlignment="Left" TextWrapping="NoWrap" VerticalContentAlignment="Center" DockPanel.Dock="Top"/>
+                                <Label Name="txtDes" Content="" FontSize="14" Visibility="Collapsed" Margin="0" DockPanel.Dock="Top"/>
+                                <TextBlock TextWrapping="Wrap" Text="Script(This content will be written through the command of ScriptWriteProvider)" FontSize="16" DockPanel.Dock="Top" Width="330" />
+                            </DockPanel>
+                            <DockPanel Margin="0,5,0,0" Grid.Row="1">                                
+                                <TextBox Name="txtScriptEnter" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True" Width="300" Margin="5"/>                                
+                            </DockPanel>
+                            <StackPanel  Grid.Row="2" Margin="0,5,0,0">
+                                <Button x:Name="btn_save" Content="Save text" Click="btn_save_Click" FontSize="20"  Width="200" Height="40" Background="LightBlue" HorizontalAlignment="Center" Margin="5" DockPanel.Dock="Top"/>
+                                <StackPanel Orientation="Vertical" DockPanel.Dock="Top">
+                                    <Label Content="DEVICE_TYPE / VariableType" FontSize="12" />
+                                    <TextBox x:Name="txt_Enum" FontSize="14" Text="" TextWrapping="Wrap" Width="300" Height="90" Margin="5" HorizontalAlignment="Left" IsReadOnly="True" ScrollViewer.VerticalScrollBarVisibility="Auto" DockPanel.Dock="Top"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <Grid DockPanel.Dock="Left" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Margin="5">
+                            <TextBlock Name="txtClass" Text="Class:" FontSize="16" Margin="5"/>
+                            <ComboBox x:Name="cb_Class" Margin="20,0,0,0" HorizontalAlignment="Left" Width="270" Background="AliceBlue" FontSize="16" Height="40" SelectionChanged="cb_Class_SelectionChanged" VerticalContentAlignment="Center"/>
+                            <TextBlock Text="Command:" FontSize="16" Margin="5"/>
+                            <ListBox Name="cb_command" Margin="20,0,5,0" HorizontalAlignment="Left" Width="270" Height="329" Background="AliceBlue" FontSize="16" VerticalContentAlignment="Center" SelectionMode="Single" SelectionChanged="cb_command_SelectionChanged"/>
+                            <Label Content="Robot EndButton Event :" FontSize="14" />
+                            <Label Width="270">
+                                <TextBlock Name="txtRobotEvent" FontSize="12" TextWrapping="Wrap" />
+                            </Label>
+                        </StackPanel>
+                        <Grid Margin="5" Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>                            
+                            <StackPanel Grid.Row="1">                                
+                                <DockPanel>
+                                    <TextBlock Text="Response Error:" FontSize="16" Margin="10" Width="80" TextWrapping="Wrap"/>
+                                    <TextBox x:Name="txt_res_error" Text="" FontSize="14" Width="150" Height="30" Margin="0,0,0,0" HorizontalAlignment="Left"/>
+                                    <Button  Name="btn_Error" Content="ErrMsg" Click="btn_Error_Click" HorizontalAlignment="Left" FontSize="14"  Width="60" Height="30" Background="#48B1E5" Margin="5"/>
+                                </DockPanel>
+                                <TextBlock Text="Response:" FontSize="16" Margin="10,5"/>
+                                <TextBox x:Name="txt_res_pay" FontSize="14" Text="response payload" TextWrapping="Wrap" Width="300" Height="370" Margin="10,0,0,0" HorizontalAlignment="Left"/>
+                                <DockPanel HorizontalAlignment="Center">
+                                    <Button  x:Name="btn_Test" Content="Test" Click="btn_Test_Click" HorizontalAlignment="Left" FontSize="20"  Width="100" Height="40" Background="#48B1E5" Margin="5"/>
+                                    <Button  Name="btn_Clear" Content="Clear" Click="btn_Clear_Click" HorizontalAlignment="Left" FontSize="20"  Width="100" Height="40" Background="#48B1E5" Margin="5"/>
+                                    <Button Content="MessageBox" Name="btnTestBox" Click="btnTestBox_Click"  Width="100" Height="40"/>
+                                </DockPanel>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </DockPanel>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>

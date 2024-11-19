@@ -1,0 +1,31 @@
+<UserControl x:Class="MutliLanguageDemo.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MutliLanguageDemo"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Loaded="UserControl_Loaded">
+    <Grid Background="#FF2D3546">
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="2.5*"/>
+            <RowDefinition Height ="2.5*"/>
+            <RowDefinition Height ="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Row="0" Grid.ColumnSpan="2" Background="#FF1A1E27" />
+        <Border Grid.Row="3" Grid.ColumnSpan="2" Background="#FF1A1E27" />
+
+        <Label x:Name="Label_Title" Grid.Row="1" Grid.ColumnSpan="2" Content="{DynamicResource Title}" FontFamily="Microsoft YaHei UI Light" FontSize="56" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,0,0,0" />
+        <Label x:Name="Label_Slogan" Grid.Row="2" Grid.Column="1" Content="{DynamicResource Slogan}" FontFamily="Microsoft YaHei UI Light" FontSize="42" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,0,0,0" Foreground="#FF77BC1F"/>
+        <Button x:Name="Btn_Close" Grid.Row="3" Grid.Column="1" Content="{DynamicResource Close}" FontSize="22" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,30,0" MinWidth="100" MinHeight="33" Click="Close_Click" Background="#FF48B1E5" Foreground="White"></Button>
+
+
+    </Grid>
+</UserControl>
